@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SEEKERS CLUB</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+<body>
+    <div class="wing wing-left"></div>
+    <div class="wing wing-right"></div>
+
+    <header class="site-header">
+        <div class="brand">MY SECOND QUARTER</div>
+        <nav class="site-nav">
+            <a href="home.html">Home</a>
+            <a href="elements.html">Element Checker</a>
+            <a href="club.html" class="active">Club Members</a>
+            <a href="project.html">Meet the Creator</a>
+        </nav>
+    </header>
+
+    <main class="console">
+        <div class="masthead">
+            <p class="eyebrow">AERIAL RECON DIVISION // ACCESS GRANTED</p>
+            <h1>SEEKERS <span>CLUB</span></h1>
+            <p class="tagline">Air superiority. Total recall. Identify any member of the fleet.</p>
+        </div>
+
+        <form>
+            <label for="first">FIRST NAME</label>
+            <input type="text" id="first" placeholder="INPUT FIRST NAME">
+
+            <label for="surname">LAST NAME</label>
+            <input type="text" id="surname" placeholder="INPUT LAST NAME">
+
+            <input type="button" py-click="name_finder" value="SEARCH">
+        </form>
+
+        <div class="result-label">// TRANSMISSION RESULT</div>
+        <div id="result"></div>
+    </main>
+
+    <script type="py" src="club.py"></script>
+</body>
+</html>

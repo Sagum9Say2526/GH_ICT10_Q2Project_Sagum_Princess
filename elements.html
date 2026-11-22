@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element Checker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+</head>
+
+<body>
+
+<header class="site-header">
+    <div class="brand">MY SECOND QUARTER</div>
+
+    <nav class="site-nav">
+        <a href="home.html">Home</a>
+        <a href="elements.html" class="active">Element Checker</a>
+        <a href="club.html">Club Members</a>
+        <a href="project.html">Meet the Creator</a>
+    </nav>
+</header>
+
+<main class="console">
+
+    <p class="tag">SKILLS TEST · CHEMISTRY</p>
+
+    <h1>Element Checker</h1>
+
+    <p>
+        Enter an element symbol to view its name,
+        atomic number, and atomic mass.
+    </p>
+
+    <section class="panel">
+
+        <label for="symbol">ELEMENT SYMBOL</label>
+
+        <input
+            id="symbol"
+            type="text"
+            placeholder="Example: O"
+        >
+
+        <button type="button" py-click="identify_element">
+            IDENTIFY ELEMENT
+        </button>
+
+        <div id="result">
+            Your element information will appear here.
+        </div>
+
+    </section>
+
+</main>
+
+<script type="py" src="elements.py"></script>
+
+</body>
+</html>
